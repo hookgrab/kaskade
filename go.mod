@@ -1,4 +1,4 @@
-module hookgrab/kaskade
+module hg.atrin.dev/kaskade
 
 go 1.24.0
 
@@ -11,6 +11,8 @@ require (
 require (
 	github.com/andybalholm/brotli v1.1.1 // indirect
 	github.com/fasthttp/websocket v1.5.12 // indirect
+	github.com/getsentry/sentry-go v0.31.1 // indirect
+	github.com/getsentry/sentry-go/fiber v0.31.1 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
@@ -22,5 +24,6 @@ require (
 	github.com/valyala/fasthttp v1.59.0 // indirect
 	golang.org/x/net v0.35.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 )
