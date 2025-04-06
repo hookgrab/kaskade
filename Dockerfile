@@ -2,9 +2,9 @@ FROM golang:1.24-alpine AS builder
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
-
 RUN apk update && apk add --no-cache git
+
+COPY go.mod go.sum ./
 
 RUN go env -w GOPRIVATE="hg.atrin.dev/*,github.com/hookgrab/*,git.atrin.dev/hookgrab/*"
 RUN go mod download
