@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY go.mod go.sum ./
 
+RUN apk update && apk add --no-cache git
+
 RUN go env -w GOPRIVATE="hg.atrin.dev/*,github.com/hookgrab/*,git.atrin.dev/hookgrab/*"
 RUN go mod download
 
